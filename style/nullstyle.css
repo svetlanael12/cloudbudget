@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../font/Lato-Light.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  /* для плавной прокрутки */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato-Regular";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.block-none {
+  display: none;
+}
+/*# sourceMappingURL=nullstyle.css.map */
