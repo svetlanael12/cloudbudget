@@ -29,12 +29,6 @@
   height: 90%;
 }
 
-.overview__head {
-  font-family: "Lato-Bold";
-  font-size: 3.6rem;
-  line-height: 1.2;
-}
-
 .overview__text {
   margin-top: 2.4rem;
   text-align: justify;
@@ -45,15 +39,6 @@
 .overview__link {
   font-size: 1.4rem;
   padding-top: 14px;
-}
-
-.link {
-  color: #ed4c5c;
-}
-
-.link:hover {
-  font-family: "Lato-Bold";
-  text-decoration: underline;
 }
 
 .block-video {

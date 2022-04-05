@@ -387,12 +387,6 @@ li {
   height: 90%;
 }
 
-.overview__head {
-  font-family: "Lato-Bold";
-  font-size: 3.6rem;
-  line-height: 1.2;
-}
-
 .overview__text {
   margin-top: 2.4rem;
   text-align: justify;
@@ -403,15 +397,6 @@ li {
 .overview__link {
   font-size: 1.4rem;
   padding-top: 14px;
-}
-
-.link {
-  color: #ed4c5c;
-}
-
-.link:hover {
-  font-family: "Lato-Bold";
-  text-decoration: underline;
 }
 
 .block-video {
@@ -492,5 +477,119 @@ li {
   .overview__btn-play {
     display: none;
   }
+}
+
+.description {
+  max-width: 1110px;
+  margin: 63px auto;
+}
+
+.description__title {
+  text-align: center;
+}
+
+.description__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 63px;
+}
+
+.description-wrap {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description__img img {
+  width: 100%;
+}
+
+.description__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  min-height: 198px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 33px 32px 25px;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.description__text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1110px) {
+  .description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1071px) {
+  .description__card_three {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description__title {
+    text-align: start;
+  }
+  .description {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 721px) {
+  .description__card_two {
+    margin-top: -50px;
+  }
+}
+
+.title {
+  font-family: "Lato-Bold";
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: "Lato-Bold";
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.link {
+  color: #ed4c5c;
+}
+
+.link:hover {
+  font-family: "Lato-Bold";
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

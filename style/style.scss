@@ -1,3 +1,25 @@
-@import 'nullstyle.scss';
-@import 'header.scss';
-@import 'block-overview.scss';
+@import "nullstyle.scss";
+@import "header.scss";
+@import "block-overview.scss";
+@import 'block-description.scss';
+
+.title {
+  font-family: "Lato-Bold";
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+    font-family: "Lato-Bold";
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.link {
+  color: #ed4c5c;
+
+  &:hover {
+    font-family: "Lato-Bold";
+    text-decoration: underline;
+  }
+}
