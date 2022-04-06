@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "block-overview.scss";
 @import 'block-description.scss';
+@import 'block-advantage';
 
 .title {
   font-family: "Lato-Bold";
@@ -21,5 +22,34 @@
   &:hover {
     font-family: "Lato-Bold";
     text-decoration: underline;
+  }
+}
+
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: 3px solid #858585;
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: 1.2rem;
+  color: #9a9a9a;
+  text-align: center;
+}
+
+.up-button:hover {
+  cursor: pointer;
+  color: #ed4c5c;
+  border-color: #ed4c5c;
+}
+
+@media (max-width: 768px) {
+  .up-button {
+    color: #ed4c5c;
+  border-color: #ed4c5c;
   }
 }

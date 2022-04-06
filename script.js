@@ -48,4 +48,21 @@ function burgerMenu() {
     })
 }
 
+function upButton() {
+    let upButton = document.querySelector('.up-button');
+
+    window.onscroll = function () {
+        if (window.pageYOffset > 200) {
+            upButton.classList.remove('block-none');
+        } else {
+            upButton.classList.add('block-none');
+        }
+    };
+
+    upButton.onclick = function () {
+    window.scrollTo(0, 0);
+    };
+}
+
 burgerMenu();
+upButton();
