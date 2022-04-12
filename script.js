@@ -48,6 +48,41 @@ function burgerMenu() {
     })
 }
 
+function customSelect() {
+    let btnSelectToggle = document.querySelector(".select__toggle");
+    let btnSelect = document.querySelector(".select__btn"); 
+    let dropdownMenu = document.querySelector(".select__dropdown");
+    let optionsSelect = document.querySelectorAll(".select__option");
+    let optContent, optValue, optIndex, display;
+  
+    btnSelectToggle.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("block-none");
+
+      btnSelect.style.transform = 'rotate(180deg)';
+      
+      for (let opt of optionsSelect) {
+        opt.onclick = function () {
+          //замена контента на выбранный и замена цвета текста
+          optContent = opt.textContent;
+          btnSelectToggle.textContent = optContent;
+          btnSelectToggle.style.color = '#000';
+  
+          //замена значения
+          optValue = opt.dataset.value;
+          btnSelectToggle.value = optValue;
+  
+          //замена индекса
+          optIndex = opt.dataset.index;
+          btnSelectToggle.dataset.index = optIndex;
+  
+          //после выбора скрыть меню
+          dropdownMenu.classList.add("block-none");
+        };
+      }
+    });
+  }
+  
+
 function upButton() {
     let upButton = document.querySelector('.up-button');
 
@@ -65,4 +100,5 @@ function upButton() {
 }
 
 burgerMenu();
+customSelect();
 upButton();

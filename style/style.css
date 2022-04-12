@@ -175,7 +175,6 @@ li {
   height: 50px;
   width: 160px;
   margin-top: 39px;
-  padding: 17px 52px;
   border: none;
   border-radius: 6px;
   background-color: #ffffff;
@@ -257,7 +256,7 @@ li {
     right: 10px;
     width: 180px;
     height: 220px;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
   }
   .nav-mobile {
@@ -783,6 +782,201 @@ li {
   }
   .download__block-2 {
     display: none;
+  }
+}
+
+.block-contact {
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 11.7rem;
+  padding-bottom: 7.8rem;
+}
+
+.contact__block-text {
+  max-width: 445px;
+}
+
+.contact__text {
+  font-size: 1.4rem;
+  line-height: 1.42;
+  margin-top: 6rem;
+}
+
+.contact__block-form {
+  max-width: 540px;
+  min-width: 350px;
+}
+
+.subscription-field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscription__field-name {
+  width: calc(100% - 30px);
+}
+
+.subscription__field-name:first-child {
+  margin-right: 30px;
+}
+
+.subscription__field {
+  height: 60px;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 20px 30px;
+  font-size: 16px;
+}
+
+.subscription__field:hover,
+.subscription__field:focus,
+.subscription__field:active {
+  outline: none;
+  border-color: #ED4C5C;
+}
+
+.subscription__field-phone {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.select {
+  margin-top: 24px;
+}
+
+.select__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  color: rgba(19, 39, 67, 0.5);
+  cursor: pointer;
+}
+
+.select__toggle:active,
+.select__toggle:focus {
+  color: #000;
+}
+
+.select__btn {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-size: 1.4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/select.svg");
+}
+
+.select__dropdown {
+  margin-top: 5px;
+  border: 1px solid #ED4C5C;
+  border-radius: 6px;
+}
+
+.select__option {
+  height: 40px;
+  padding-left: 30px;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.select__option:hover {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subscription__button {
+  width: 160px;
+  height: 50px;
+  margin-top: 27px;
+  background-color: #ED4C5C;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subscription__button span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: 'Lato-Light';
+}
+
+.subscription__button:hover span {
+  font-family: 'Lato-Bold';
+}
+
+@media (max-width: 1110px) {
+  .block-contact {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .contact__block-form {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .contact__title {
+    text-align: center;
+  }
+  .contact__text {
+    text-align: center;
+    margin-top: 2.7rem;
+  }
+  .contact__block-form {
+    width: 100%;
+    max-width: 700px;
+    min-width: 250px;
+    margin-left: 0;
+  }
+  .subscription-field-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscription__field-name {
+    margin-top: 2.7rem;
+    width: 100%;
+  }
+  .subscription__button {
+    width: 100%;
   }
 }
 
