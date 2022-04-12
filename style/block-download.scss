@@ -1,0 +1,101 @@
+.download-block {
+  width: 100%;
+  background-color: #ed4c5c;
+}
+
+.download__wrp {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__block {
+  max-width: 445px;
+  color: #fff;
+}
+
+.download__text {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.download__list {
+  display: flex;
+  padding-top: 4rem;
+}
+
+.download__item {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.download__item:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.download__social-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.social-icon__play-market {
+  background-image: url("../img/ion-google-playstore.svg");
+  background-size: 32px;
+}
+
+.social-icon__app-store {
+  background-image: url("../img/ion-apple-appstore.svg");
+  background-size: 32px;
+}
+
+.social-icon__windows {
+  background-image: url("../img/icon_windows.svg");
+  background-size: 24px;
+}
+
+.download__block-2 {
+  max-width: 450px;
+}
+
+@media (max-width: 1110px) {
+  .download__wrp {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .download__wrp {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .download__block {
+    margin: auto;
+    max-width: 700px;
+    min-width: 200px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .download__item {
+    margin: auto;
+  }
+
+  .download__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .download__block-2 {
+    display: none;
+  }
+}
