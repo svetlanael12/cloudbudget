@@ -232,6 +232,7 @@
                 <input
                   type="text"
                   class="subscription__field-name subscription__field"
+                  id="subscription__first-name"
                   name="first-name"
                   placeholder="First Name"
                   required
@@ -239,6 +240,7 @@
                 <input
                   type="text"
                   class="subscription__field-name subscription__field"
+                  id="subscription__last-name"
                   name="last-name"
                   placeholder="Last Name"
                   required
@@ -247,6 +249,7 @@
               <input
                 type="tel"
                 class="subscription__field subscription__field-phone"
+                id="subscription__phone-number"
                 name="phone-number"
                 placeholder="Phone Number"
                 required
@@ -261,8 +264,8 @@
                   data-select="toggle"
                   data-index="-1"
                 >
-                 <span>Select Service</span> 
-                 <div class="select__btn"></div>
+                  <span>Select Service</span>
+                  <div class="select__btn"></div>
                 </button>
 
                 <div class="select__dropdown block-none">
@@ -273,7 +276,7 @@
                       data-value="service-normal"
                       data-index="0"
                     >
-                    Service Normal
+                      Service Normal
                     </li>
                     <li
                       class="select__option"
@@ -281,7 +284,7 @@
                       data-value="service-premium"
                       data-index="1"
                     >
-                    Service Premium
+                      Service Premium
                     </li>
                     <li
                       class="select__option"
@@ -302,12 +305,130 @@
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <section class="footer__block">
+          <div class="footer__address-wrap">
+            <h3 class="footer__subtitle subtitle">Address</h3>
+            <p class="footer__text">
+              <a class="footer__link" href="#"
+                >Pipang Ltd, Griva Digeni,<br />
+                81-83 Jacovides Tower, 1st Floor<br />
+                1090 Picosia USA
+              </a>
+            </p>
+          </div>
+          <div class="footer__services-wrap">
+            <h3 class="footer__subtitle subtitle">Services</h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="#overview">Overview</a>
+              </li>
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="#features">Features</a>
+              </li>
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="#technology">Technology</a>
+              </li>
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="#">Privecy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__getInTouch-wrap">
+            <h3 class="footer__subtitle subtitle">Get in Touch</h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="mailto:info@cloudbudget.com"
+                  >info@cloudbudget.com</a
+                >
+              </li>
+              <li class="footer__item footer__text">
+                <a class="footer__link" href="tel:+18447217120"
+                  >+1 844-721-7120</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list social-icon">
+              <li class="footer__item">
+                <a href="#0" class="footer__social-icon social-icon__facebook">
+                  <span class="visually-hidden">facebook</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.5 1.16663H8.75C7.97645 1.16663 7.23458 1.47392 6.6876 2.0209C6.14062 2.56788 5.83333 3.30974 5.83333 4.08329V5.83329H4.08333V8.16663H5.83333V12.8333H8.16666V8.16663H9.91666L10.5 5.83329H8.16666V4.08329C8.16666 3.92858 8.22812 3.78021 8.33752 3.67081C8.44691 3.56142 8.59529 3.49996 8.75 3.49996H10.5V1.16663Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social-icon social-icon__linkId">
+                  <span class="visually-hidden">linkId</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.33334 4.66663C10.2616 4.66663 11.1518 5.03538 11.8082 5.69175C12.4646 6.34813 12.8333 7.23837 12.8333 8.16663V12.25H10.5V8.16663C10.5 7.85721 10.3771 7.56046 10.1583 7.34167C9.9395 7.12288 9.64276 6.99996 9.33334 6.99996C9.02392 6.99996 8.72717 7.12288 8.50838 7.34167C8.28959 7.56046 8.16667 7.85721 8.16667 8.16663V12.25H5.83334V8.16663C5.83334 7.23837 6.20208 6.34813 6.85846 5.69175C7.51484 5.03538 8.40508 4.66663 9.33334 4.66663Z"
+                    />
+                    <path d="M1.16667 5.25H3.5V12.25H1.16667V5.25Z" />
+                    <path
+                      d="M2.33333 3.49996C2.97767 3.49996 3.5 2.97763 3.5 2.33329C3.5 1.68896 2.97767 1.16663 2.33333 1.16663C1.689 1.16663 1.16667 1.68896 1.16667 2.33329C1.16667 2.97763 1.689 3.49996 2.33333 3.49996Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social-icon social-icon__twitter">
+                  <span class="visually-hidden">twitter</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4167 1.75001C12.8581 2.14403 12.2396 2.4454 11.585 2.64251C11.2337 2.23855 10.7668 1.95224 10.2474 1.8223C9.7281 1.69235 9.18137 1.72504 8.68122 1.91594C8.18106 2.10684 7.75159 2.44674 7.45091 2.88967C7.15022 3.33261 6.99283 3.8572 7 4.39251V4.97584C5.97487 5.00242 4.95908 4.77506 4.04309 4.31402C3.1271 3.85297 2.33935 3.17254 1.75 2.33334C1.75 2.33334 -0.583331 7.58334 4.66667 9.91667C3.46531 10.7322 2.03418 11.141 0.583336 11.0833C5.83333 14 12.25 11.0833 12.25 4.37501C12.2495 4.21252 12.2338 4.05044 12.2033 3.89084C12.7987 3.30371 13.2188 2.56242 13.4167 1.75001Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__support-wrap">
+            <h3 class="footer__subtitle subtitle">We Support</h3>
+            <img class="" src="img/support.svg" width="" />
+          </div>
+        </section>
+        <p class="copyright">Copyright 2018 CloudBudget</p>
+      </footer>
     </div>
 
     <button class="up-button block-none" type="button">
       ↑
-      <span class="visually-hidden">Наверх</span>
+      <span class="visually-hidden">Up</span>
     </button>
+
+    <section class="form-popup">
+      <div class="form-popup__container">
+      <h2 class="form-popup__title title">Thank you!</h2>
+      <div class="form-popup__text">
+        Our support team will get back to you within 24 hours
+      </div>
+      <button class="form-popup__close" type="button">
+        <span class="visually-hidden">Close popup</span>
+      </button>
+    </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

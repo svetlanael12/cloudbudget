@@ -58,7 +58,9 @@ function customSelect() {
     btnSelectToggle.addEventListener("click", function () {
       dropdownMenu.classList.toggle("block-none");
 
-      btnSelect.style.transform = 'rotate(180deg)';
+      if(!dropdownMenu.classList.contains('block-none')) btnSelect.style.transform = 'rotate(180deg)';
+      else btnSelect.style.transform = '';
+      
       
       for (let opt of optionsSelect) {
         opt.onclick = function () {
@@ -99,6 +101,33 @@ function upButton() {
     };
 }
 
+function formPopup() {
+    let popup = document.querySelector('.form-popup');
+    let closeBtn = document.querySelector('.form-popup__close');
+    let submitBtn = document.querySelector('.subscription .subscription__button');
+
+    let form = document.querySelector('.subscription');
+    let firstName = document.querySelector('#subscription__first-name');
+    let lastName = document.querySelector('#subscription__last-name');
+    let phoneNumber = document.querySelector('#subscription__phone-number');
+
+    form.oninput = function() {
+        if((firstName.value.length && lastName.value.length && phoneNumber.value.length) >= 1) {
+            submitBtn.addEventListener('click', function(){
+                popup.style.display = 'flex';
+                firstName.value = '';
+            lastName.value = '';
+            phoneNumber.value = '';
+            })
+
+            closeBtn.addEventListener('click', function(){
+                popup.style.display = 'none';
+            })
+        }
+    }
+}
+
 burgerMenu();
 customSelect();
+formPopup()
 upButton();
