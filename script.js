@@ -113,15 +113,16 @@ function formPopup() {
 
     form.oninput = function() {
         if((firstName.value.length && lastName.value.length && phoneNumber.value.length) >= 1) {
-            submitBtn.addEventListener('click', function(){
+            submitBtn.addEventListener('click', function(e){
+                e.preventDefault();
                 popup.style.display = 'flex';
-                firstName.value = '';
-            lastName.value = '';
-            phoneNumber.value = '';
             })
 
             closeBtn.addEventListener('click', function(){
                 popup.style.display = 'none';
+                firstName.value = '';
+                lastName.value = '';
+                phoneNumber.value = '';
             })
         }
     }
